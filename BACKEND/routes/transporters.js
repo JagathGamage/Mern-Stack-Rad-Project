@@ -14,7 +14,7 @@ router.route("/add").post((req,res)=>{
     })
 
     newTransporter.save().then(()=>{
-        res.json("Transporter Added")
+        res.json("Transporter Added Successfully")
     }).catch((err)=>{
         console.log(err);
     })
